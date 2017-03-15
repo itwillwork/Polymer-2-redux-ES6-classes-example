@@ -1,0 +1,54 @@
+{
+  "name": "polymer-redux",
+  "version": "0.1.0",
+  "description": "Polymer bindings for Redux.",
+  "main": "dist/polymer-redux.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "wct",
+    "lint": "polylint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tur-nr/polymer-redux.git"
+  },
+  "keywords": [
+    "redux",
+    "polymer",
+    "reducer",
+    "state",
+    "web-components"
+  ],
+  "author": "Christopher Turner <turner296@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tur-nr/polymer-redux/issues"
+  },
+  "homepage": "https://github.com/tur-nr/polymer-redux#readme",
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.8.0",
+    "babel-plugin-remove-comments": "^2.0.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.8.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.15.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.9.0",
+    "babel-plugin-transform-es2015-parameters": "^6.11.4",
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.8.0",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-es2015-template-literals": "^6.8.0",
+    "babel-preset-babili": "0.0.3",
+    "bower": "^1.5.2",
+    "coveralls": "^2.11.9",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
+    "polylint": "^2.10.1",
+    "polymer-cli": "^0.11.1",
+    "redux": "^3.0.5",
+    "reselect": "^2.5.1",
+    "rollup": "^0.36.0",
+    "rollup-plugin-babel": "^2.6.1",
+    "web-component-tester": "~4.2.2",
+    "web-component-tester-istanbul": "https://github.com/t2ym/web-component-tester-istanbul/tarball/0.10.1"
+  }
+}

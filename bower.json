@@ -1,0 +1,8 @@
+{
+  "name": "Polymer-2-redux-ES6-classes-example",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#2.0-preview",
+    "polymer-redux": "polymer-2"
+  }
+}

@@ -1,0 +1,73 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../redux/redux-store.html">
+
+<dom-module id="my-counter">
+  <template>
+
+    <!-- Styles MUST be inside template -->
+    <style>
+      .counter__btn {
+        border: none;
+        width: 60px;
+        height: 40px;
+        margin: 30px 10px 0;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        background: #1e88e5;
+        color: #fff;
+        outline: none;
+      }
+      .counter__count {
+        font-weight: bold;
+        font-size: 64px;
+        text-align: center;
+      }
+    </style>
+
+    <div class="counter__count"> {{count}}</div>
+    <button class="counter__btn" on-click="minus">minus</button>
+    <button class="counter__btn" on-click="plus">plus</button>
+  </template>
+
+  <script>
+    class MyCounter extends ReduxMixin(Polymer.Element) {
+
+      static get is() { return 'my-counter' }
+
+      static get properties() {
+        return {
+          count: {
+            type: Number,
+            statePath: 'count'
+          }
+        }
+      }
+
+      static get actions() {
+        return {
+          plusCount: function(payload) {
+              return {
+                  type: 'PLUS_COUNT',
+              };
+          },
+          minusCount: function(payload) {
+              return {
+                  type: 'MINUS_COUNT',
+              };
+          },
+        }
+      };
+
+      plus() {
+        this.dispatch('plusCount');
+      }
+      minus() {
+        this.dispatch('minusCount');
+      }
+    }
+
+    customElements.define(MyCounter.is, MyCounter);
+
+  </script>
+</dom-module>

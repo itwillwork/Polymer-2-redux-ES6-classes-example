@@ -1,0 +1,15 @@
+{
+  "name": "Polymer-2-redux-ES6-classes-example",
+  "version": "1.0.0",
+  "description": "Polymer 2 (ES6 classes) + redux",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "polymer serve"
+  },
+  "author": "itwillwork https://github.com/itwillwork",
+  "license": "MIT",
+  "dependencies": {
+    "redux": "^3.6.0"
+  }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+  <title>my-counter demo</title>
+  <script src="/node_modules/redux/dist/redux.js"></script>
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="src/components/my-counter.html">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+  <style>
+    body, html {
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+	  height: 100%;
+	  font-family: 'Roboto', sans-serif;
+	}
+	.container {
+	  position: relative;
+	  height: 100%;
+	  background-color: #fff;
+	}
+	my-counter {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+}
+  </style>
+</head>
+
+<body>
+	<div class="container">
+		<my-counter />
+	</div>
+</body>
+</html>
